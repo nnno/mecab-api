@@ -16,18 +16,16 @@ $app->get('/mecab', function() use ($app) {
     $ret = $cl->load('Mecab');
     $mecab = new Mecab();
 
+    /*
     $mecab_options = array(
         '-u' => PATH_RESOURCE_ROOT . '/word.dic',
     );
+    */
 
     $ret = $mecab->parseToNode($sentence, $mecab_options);
 
     $app->response()->header('Content-Type', 'application/json; charset=utf-8');
     $app->response()->body(json_encode($ret));
-});
-
-$app->get('/mecab/wakati', function() use ($app) {
-    $sentence = $app->request()->get('s');
 });
 
 $app->run();
