@@ -2,10 +2,9 @@ mecab-api
 =====
 
 別の用途で作ってたMecalのPHP classを折角なのでAPI化してみました。
-Web-API化にあたりSlim Framework (https://github.com/codeguy/Slim)を、
+Web-API化にあたりSlim Framework ( https://github.com/codeguy/Slim )を、
 呼び出しサンプルの画面にjQuery mobile1.0を使っています。
 
---------------------
 動作環境
 * apache
 * php5.3
@@ -15,7 +14,6 @@ Web-API化にあたりSlim Framework (https://github.com/codeguy/Slim)を、
 ** bootstrap.php内の定数でpathを定義してください
 
 TODO
---------------------
 * Error Handling
 * Support -O wakati mode.
 
