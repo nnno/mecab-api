@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+    <title>Mecab API Sample</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="form">
+    <div data-role="header">
+        <h1>Mecab API Sample</h1>
+    </div><!-- /header -->
+
+    <div data-role="content">   
+        <form id="mecab-form">
+            <div data-role="fieldcontain">
+                <label for="s">Sentence:</label>
+                <textarea name="s" id="sentence"></textarea>
+            </div>
+            <a href="#result" data-role="button" data-theme="b" class="ui-btn ui-btn-corner-all ui-shadow ui-btn-up-b">
+                <span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true">
+                    <span class="ui-btn-text">Submit</span>
+                </span>
+            </a>
+        </form>
+    </div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="result">
+    <div data-role="header">
+        <a href="#form" data-icon="back" data-direction="reverse">back</a>
+        <h1>Result</h1>
+    </div><!-- /header -->
+
+    <div data-role="content">   
+    </div><!-- /content -->
+</div><!-- /page -->
+
+</body>
+</html>
